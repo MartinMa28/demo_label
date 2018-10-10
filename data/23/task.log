@@ -1,0 +1,42 @@
+[2018-10-10 04:42:34,529] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist
+[2018-10-10 04:49:22,254] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist
+[2018-10-10 05:24:23,082] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist
+[2018-10-10 05:57:57,409] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist
+[2018-10-10 08:40:02,606] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist
+[2018-10-10 08:40:16,465] ERROR task_23: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 140, in get_frame
+    return sendfile(request, path)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/yilinma/Documents/LabellingTool/cvat/data/23/data/0/0/0.jpg" does not exist

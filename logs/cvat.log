@@ -1,0 +1,1712 @@
+[2018-10-08 08:42:51,605] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 08:42:51,769] ERROR cvat.apps.engine.views: cannot create task Cars
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 87, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 70, in create
+    job_id="task.create/{}".format(tid))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 60, in enqueue_call
+    return self.original_enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 56, in original_enqueue_call
+    return super(DjangoRQ, self).enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-08 08:43:00,852] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 08:43:00,989] ERROR cvat.apps.engine.views: cannot create task Cars
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 87, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 70, in create
+    job_id="task.create/{}".format(tid))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 60, in enqueue_call
+    return self.original_enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 56, in original_enqueue_call
+    return super(DjangoRQ, self).enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-08 09:00:22,591] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 09:00:23,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:24,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:25,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:26,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:27,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:28,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:29,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:30,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:31,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:33,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:33,733] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:34,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:35,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:36,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:37,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:38,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:39,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:40,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:00:41,727] INFO cvat.apps.engine.views: check task #3
+[2018-10-08 09:01:16,396] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 09:01:17,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:18,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:19,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:20,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:21,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:22,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:23,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:24,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:25,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:26,686] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:27,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:28,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:29,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:30,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:31,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:32,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:33,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:34,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:35,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:36,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:37,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:38,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:39,748] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:40,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:41,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:42,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:43,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:44,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:45,745] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:46,738] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:47,737] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:48,731] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:49,727] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:50,736] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:51,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:52,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:53,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:54,730] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:55,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:56,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:57,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:58,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:01:59,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:00,749] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:01,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:02,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:03,731] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:04,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:05,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:06,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:07,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:08,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:09,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:10,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:11,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:12,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:13,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:14,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:15,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:16,733] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:17,727] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:18,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:19,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:20,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:21,731] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:22,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:23,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:24,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:25,737] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:26,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:27,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:28,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:29,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:30,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:31,738] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:32,736] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:33,733] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:34,727] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:35,725] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:36,734] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:37,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:38,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:39,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:40,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:41,731] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:42,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:43,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:44,725] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:45,729] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:46,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:47,726] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:48,728] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:49,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:50,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:51,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:52,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:53,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:54,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:55,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:56,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:57,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:58,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:02:59,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:00,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:01,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:02,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:03,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:04,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:05,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:06,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:07,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:08,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:09,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:10,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:10,783] INFO cvat.apps.engine.views: delete task #3
+[2018-10-08 09:03:11,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:12,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:13,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:14,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:15,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:16,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:17,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:18,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:19,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:20,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:21,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:22,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:23,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:24,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:25,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:26,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:27,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:28,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:29,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:30,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:31,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:32,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:33,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:34,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:35,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:36,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:37,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:38,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:39,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:40,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:41,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:42,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:43,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:44,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:45,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:46,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:47,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:48,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:49,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:50,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:51,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:52,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:53,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:54,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:55,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:56,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:57,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:58,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:03:59,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:00,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:01,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:02,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:03,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:04,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:05,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:06,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:07,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:08,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:09,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:10,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:11,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:12,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:13,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:14,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:15,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:16,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:17,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:18,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:19,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:20,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:21,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:22,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:23,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:24,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:25,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:26,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:27,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:28,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:29,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:30,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:31,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:32,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:33,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:34,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:35,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:36,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:37,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:38,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:39,526] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:40,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:41,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:42,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:43,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:44,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:45,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:46,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:47,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:48,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:49,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:50,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:51,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:52,527] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:53,533] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:54,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:55,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:56,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:57,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:58,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:04:59,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:00,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:01,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:02,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:03,532] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:04,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:05,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:06,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:07,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:08,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:09,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:10,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:11,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:12,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:13,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:14,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:15,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:16,525] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:17,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:18,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:19,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:20,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:21,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:22,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:23,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:24,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:25,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:26,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:27,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:28,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:29,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:30,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:31,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:32,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:33,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:34,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:35,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:36,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:37,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:38,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:39,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:40,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:41,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:42,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:43,533] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:44,529] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:45,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:46,523] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:47,521] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:48,535] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:49,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:50,524] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:05:51,522] INFO cvat.apps.engine.views: check task #4
+[2018-10-08 09:07:02,319] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 09:07:03,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:04,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:05,498] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:06,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:07,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:08,501] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:09,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:10,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:11,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:12,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:13,499] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:14,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:15,498] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:16,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:17,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:18,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:19,498] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:20,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:21,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:22,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:23,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:24,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:25,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:26,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:27,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:28,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:29,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:30,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:31,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:32,501] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:33,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:34,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:35,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:36,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:37,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:38,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:39,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:40,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:41,506] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:42,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:43,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:44,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:45,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:46,503] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:47,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:48,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:49,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:50,503] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:51,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:52,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:53,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:54,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:55,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:56,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:57,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:58,501] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:07:59,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:00,504] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:01,501] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:02,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:03,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:04,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:05,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:06,504] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:07,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:08,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:09,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:10,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:11,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:12,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:13,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:14,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:15,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:16,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:17,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:18,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:19,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:20,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:21,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:22,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:23,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:24,732] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:25,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:26,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:27,734] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:28,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:29,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:30,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:31,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:32,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:33,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:34,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:35,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:36,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:37,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:38,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:39,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:40,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:41,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:42,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:43,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:44,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:45,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:46,740] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:47,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:48,733] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:49,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:50,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:51,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:52,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:53,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:54,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:55,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:56,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:57,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:58,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:08:59,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:00,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:01,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:02,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:03,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:04,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:05,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:06,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:07,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:08,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:09,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:10,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:11,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:12,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:13,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:14,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:15,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:16,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:17,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:18,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:19,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:20,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:21,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:22,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:23,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:24,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:25,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:26,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:27,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:28,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:29,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:30,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:31,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:32,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:33,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:34,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:35,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:36,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:37,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:38,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:39,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:40,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:41,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:42,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:43,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:44,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:45,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:46,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:47,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:48,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:49,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:50,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:51,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:52,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:53,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:54,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:55,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:56,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:57,500] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:58,505] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:09:59,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:00,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:01,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:02,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:03,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:04,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:05,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:06,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:07,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:08,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:09,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:10,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:11,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:12,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:13,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:14,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:15,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:16,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:17,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:18,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:19,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:20,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:21,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:22,738] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:23,732] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:24,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:25,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:26,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:27,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:28,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:29,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:30,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:31,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:32,725] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:33,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:34,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:35,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:36,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:37,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:38,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:39,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:40,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:41,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:42,732] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:43,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:44,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:45,739] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:46,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:47,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:48,735] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:49,738] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:50,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:51,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:52,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:53,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:54,738] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:55,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:56,729] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:57,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:58,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:10:59,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:00,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:01,739] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:02,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:03,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:04,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:05,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:06,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:07,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:08,734] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:09,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:10,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:11,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:12,731] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:13,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:14,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:15,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:16,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:17,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:18,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:19,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:20,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:21,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:22,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:23,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:24,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:25,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:26,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:27,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:28,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:29,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:30,732] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:31,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:32,728] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:33,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:34,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:35,737] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:36,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:37,736] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:38,727] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:39,730] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:40,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:41,726] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:42,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:43,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:44,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:45,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:46,498] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:47,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:48,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:49,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:50,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:51,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:52,497] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:53,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:54,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:55,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:56,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:57,495] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:11:58,496] INFO cvat.apps.engine.views: check task #5
+[2018-10-08 09:12:12,948] INFO cvat.apps.engine.views: delete task #4
+[2018-10-08 09:12:16,148] INFO cvat.apps.engine.views: delete task #5
+[2018-10-08 09:12:44,823] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 09:12:45,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:46,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:47,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:48,963] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:49,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:50,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:51,960] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:52,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:53,964] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:54,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:55,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:56,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:57,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:58,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:12:59,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:00,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:01,960] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:02,960] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:03,960] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:05,727] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:06,110] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:13:06,961] INFO cvat.apps.engine.views: check task #6
+[2018-10-08 09:50:12,529] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'car person bike ', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 09:50:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:16,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:19,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:21,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:23,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:26,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:29,670] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:30,672] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:31,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:32,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:35,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:40,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:41,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:42,662] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:44,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:45,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:47,665] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:48,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:49,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:50,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:51,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:52,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:53,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:54,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:55,665] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:56,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:57,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:58,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:50:59,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:00,662] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:01,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:02,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:03,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:04,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:05,670] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:06,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:07,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:08,672] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:09,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:10,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:11,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:12,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:13,666] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:14,665] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:16,663] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:17,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:18,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:29,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:41,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:44,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:55,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:51:59,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:00,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:03,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:04,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:11,663] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:16,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:19,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:22,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:25,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:35,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:44,663] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:45,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:46,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:47,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:49,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:55,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:52:59,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:00,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:05,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:09,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:11,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:12,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:13,666] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:16,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:18,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:24,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:28,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:39,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:40,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:42,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:44,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:45,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:47,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:48,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:50,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:53,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:54,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:55,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:57,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:53:59,666] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:00,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:02,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:05,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:06,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:08,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:11,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:16,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:17,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:19,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:20,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:23,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:24,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:25,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:27,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:28,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:30,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:33,662] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:36,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:40,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:41,670] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:43,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:44,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:46,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:52,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:55,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:56,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:58,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:54:59,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:00,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:10,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:11,662] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:14,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:16,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:17,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:21,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:28,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:29,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:33,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:38,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:40,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:49,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:50,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:55,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:56,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:57,665] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:58,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:55:59,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:00,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:01,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:02,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:04,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:05,669] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:07,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:08,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:10,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:11,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:12,666] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:14,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:16,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:19,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:31,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:33,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:39,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:55,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:56,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:56:59,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:00,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:01,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:06,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:11,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:13,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:14,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:16,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:17,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:22,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:28,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:31,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:34,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:39,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:46,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:53,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:55,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:58,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:57:59,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:00,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:04,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:10,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:11,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:13,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:16,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:22,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:26,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:31,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:33,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:34,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:37,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:38,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:41,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:47,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:49,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:50,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:52,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:55,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:58:59,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:00,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:01,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:02,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:07,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:11,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:13,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:16,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:20,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:22,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:23,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:25,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:26,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:27,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:30,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:31,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:32,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:33,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:34,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:37,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:38,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:39,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:40,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:41,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:42,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:43,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:45,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:47,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:49,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:50,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:51,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:52,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:53,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:54,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:55,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:56,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:57,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:58,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 09:59:59,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:00,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:01,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:02,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:03,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:04,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:05,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:06,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:07,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:08,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:09,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:10,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:11,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:12,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:13,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:14,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:15,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:16,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:17,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:18,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:19,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:20,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:21,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:22,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:23,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:24,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:25,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:26,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:27,668] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:28,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:29,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:30,657] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:31,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:32,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:33,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:34,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:35,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:36,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:37,670] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:38,667] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:39,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:40,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:41,666] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:42,660] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:43,661] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:44,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:45,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:46,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:47,663] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:48,658] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:00:49,659] INFO cvat.apps.engine.views: check task #7
+[2018-10-08 10:06:54,997] INFO cvat.apps.engine.views: create task with params = {'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 10:15:00,936] INFO cvat.apps.engine.views: delete task #6
+[2018-10-08 10:15:03,408] INFO cvat.apps.engine.views: delete task #7
+[2018-10-08 10:15:35,597] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car label', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 10:15:36,746] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:37,745] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:38,748] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:39,745] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:40,750] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:41,750] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 10:15:42,747] INFO cvat.apps.engine.views: check task #8
+[2018-10-08 11:06:40,064] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-08 11:06:41,196] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:42,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:43,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:44,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:45,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:46,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:47,200] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:48,196] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:49,196] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:50,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:51,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:52,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:53,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-08 11:06:54,195] INFO cvat.apps.engine.views: check task #9
+[2018-10-09 05:21:20,455] INFO cvat.apps.engine.views: delete task #9
+[2018-10-09 05:21:23,134] INFO cvat.apps.engine.views: delete task #8
+[2018-10-09 05:21:45,419] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:21:45,542] ERROR cvat.apps.engine.views: cannot create task Car
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 87, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 70, in create
+    job_id="task.create/{}".format(tid))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 60, in enqueue_call
+    return self.original_enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 56, in original_enqueue_call
+    return super(DjangoRQ, self).enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-09 05:21:47,784] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:21:47,934] ERROR cvat.apps.engine.views: cannot create task Car
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 87, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 70, in create
+    job_id="task.create/{}".format(tid))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 60, in enqueue_call
+    return self.original_enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 56, in original_enqueue_call
+    return super(DjangoRQ, self).enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-09 05:21:48,304] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:21:48,418] ERROR cvat.apps.engine.views: cannot create task Car
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 87, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 70, in create
+    job_id="task.create/{}".format(tid))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 60, in enqueue_call
+    return self.original_enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/django_rq/queues.py", line 56, in original_enqueue_call
+    return super(DjangoRQ, self).enqueue_call(*args, **kwargs)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-09 05:23:21,276] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:23:22,400] INFO cvat.apps.engine.views: check task #13
+[2018-10-09 05:23:23,400] INFO cvat.apps.engine.views: check task #13
+[2018-10-09 05:23:24,400] INFO cvat.apps.engine.views: check task #13
+[2018-10-09 05:23:25,400] INFO cvat.apps.engine.views: check task #13
+[2018-10-09 05:23:47,568] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:23:48,691] INFO cvat.apps.engine.views: check task #14
+[2018-10-09 05:23:49,691] INFO cvat.apps.engine.views: check task #14
+[2018-10-09 05:23:50,691] INFO cvat.apps.engine.views: check task #14
+[2018-10-09 05:23:51,691] INFO cvat.apps.engine.views: check task #14
+[2018-10-09 05:23:52,694] INFO cvat.apps.engine.views: check task #14
+[2018-10-09 05:26:59,697] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car 2', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 05:27:00,873] INFO cvat.apps.engine.views: check task #15
+[2018-10-09 05:27:01,873] INFO cvat.apps.engine.views: check task #15
+[2018-10-09 05:27:02,872] INFO cvat.apps.engine.views: check task #15
+[2018-10-09 06:03:03,968] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car 3', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 06:03:05,090] INFO cvat.apps.engine.views: check task #16
+[2018-10-09 06:03:06,090] INFO cvat.apps.engine.views: check task #16
+[2018-10-09 06:03:07,091] INFO cvat.apps.engine.views: check task #16
+[2018-10-09 06:03:08,090] INFO cvat.apps.engine.views: check task #16
+[2018-10-09 06:10:53,628] INFO cvat.apps.engine.views: delete task #13
+[2018-10-09 06:10:57,027] INFO cvat.apps.engine.views: delete task #14
+[2018-10-09 06:10:59,523] INFO cvat.apps.engine.views: delete task #15
+[2018-10-09 06:11:01,835] INFO cvat.apps.engine.views: delete task #16
+[2018-10-09 06:11:59,638] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 06:12:00,796] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:01,797] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:02,795] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:03,795] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:04,796] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:05,795] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:06,797] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:12:07,795] INFO cvat.apps.engine.views: check task #17
+[2018-10-09 06:25:32,246] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car 1', 'bug_tracker_link': '', 'labels': 'car person bike', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 06:25:33,373] INFO cvat.apps.engine.views: check task #18
+[2018-10-09 06:25:34,372] INFO cvat.apps.engine.views: check task #18
+[2018-10-09 08:21:01,043] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Cars', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'segment_size': '3000', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 08:21:02,168] INFO cvat.apps.engine.views: check task #19
+[2018-10-09 08:21:03,167] INFO cvat.apps.engine.views: check task #19
+[2018-10-09 12:20:30,484] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Car 3', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 12:20:31,625] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:32,626] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:33,628] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:34,630] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:35,625] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:36,628] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:37,635] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 12:20:38,625] INFO cvat.apps.engine.views: check task #20
+[2018-10-09 13:00:59,355] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-09 13:01:00,475] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:01,475] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:02,478] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:03,474] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:04,487] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:05,477] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:06,474] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:07,475] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:08,474] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:09,474] INFO cvat.apps.engine.views: check task #21
+[2018-10-09 13:01:10,476] INFO cvat.apps.engine.views: check task #21
+[2018-10-10 04:41:03,171] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car1', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-10 04:41:03,358] ERROR cvat.apps.engine.views: cannot create task Lucky Car1
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/views.py", line 104, in create_task
+    task.create(db_task.id, params)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/apps/engine/task.py", line 71, in create
+    print('task.create, length before enqueue:', len(q))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 76, in __len__
+    return self.count
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/rq/queue.py", line 166, in count
+    return self.connection.llen(self.key)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 1325, in llen
+    return self.execute_command('LLEN', name)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/home/yilinma/Documents/LabellingTool/cvat/cvat/venv_labelling_tool/lib/python3.6/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-10-10 04:42:30,429] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car1', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-10 04:42:31,562] INFO cvat.apps.engine.views: check task #23
+[2018-10-10 04:42:32,559] INFO cvat.apps.engine.views: check task #23
+[2018-10-10 04:42:33,560] INFO cvat.apps.engine.views: check task #23
+[2018-10-10 04:49:18,731] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car2', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-10 04:49:19,863] INFO cvat.apps.engine.views: check task #24
+[2018-10-10 04:49:20,862] INFO cvat.apps.engine.views: check task #24
+[2018-10-10 04:49:21,865] INFO cvat.apps.engine.views: check task #24
+[2018-10-10 05:24:18,842] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car3', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-10 05:24:19,993] INFO cvat.apps.engine.views: check task #25
+[2018-10-10 05:24:20,993] INFO cvat.apps.engine.views: check task #25
+[2018-10-10 05:24:21,993] INFO cvat.apps.engine.views: check task #25
+[2018-10-10 05:57:54,196] INFO cvat.apps.engine.views: create task with params = {'task_name': 'Lucky Car4', 'bug_tracker_link': '', 'labels': 'vehicle @select=type:__undefined__,car,truck,bus,train ~radio=quality:good,bad ~checkbox=parked:false', 'flip_flag': 'false', 'z_order': 'false', 'storage': 'local', 'owner': <SimpleLazyObject: <User: admin>>}
+[2018-10-10 05:57:55,328] INFO cvat.apps.engine.views: check task #26
+[2018-10-10 05:57:56,328] INFO cvat.apps.engine.views: check task #26

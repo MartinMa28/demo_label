@@ -23,7 +23,7 @@ services:
 
   cvat:
     container_name: cvat
-    image: cvat
+    image: cvat_download_ed1
     restart: always
     depends_on:
       - cvat_redis

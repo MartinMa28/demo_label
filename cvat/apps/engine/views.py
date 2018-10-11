@@ -22,6 +22,8 @@ from cvat.apps.log_proxy.proxy_logger import client_log_proxy
 from requests.exceptions import RequestException
 from .logging import task_logger, job_logger
 
+from cvat.apps.engine.aimaster.dataset.DATASET import DATA_SET
+
 global_logger = logging.getLogger(__name__)
 
 ############################# High Level server API
@@ -91,12 +93,26 @@ def create_task(request):
                 print('views.create_task, path:', path)
                 print('views.create_task, target_paths:', target_paths)
                 # ----------------------------------------------------
-                with open(path, 'wb') as upload_file:
-                    for chunk in data_file.chunks():
-                        # --------------------------------------------
-                        print("views.create_task, chunk's type:", type(chunk))
-                        # --------------------------------------------
-                        upload_file.write(chunk)
+                # with open(path, 'wb') as upload_file:
+                #     for chunk in data_file.chunks():
+                #         # --------------------------------------------
+                #         print("views.create_task, chunk's type:", type(chunk))
+                #         # --------------------------------------------
+                #         upload_file.write(chunk)
+                
+                # -------------------------- Download from HBase -----------------------------
+                data_set = DATA_SET(ip='ai-master.sh.intel.com')
+                data_set.download('kfb', 'merge_kfb_2', \
+                '/home/django/test_images/', \
+                ["pos:123_s20"])
+                # -------------------------- Download from HBase -----------------------------
+                upload_file_handler = open(path, 'wb')
+                with open('/home/django/test_images/pos:123_s20/0.jpg','rb') as f:
+                    while True:
+                        sub_byte = f.read(1)
+                        if not sub_byte:
+                            break
+                        upload_file_handler.write(sub_byte)
 
         params['SOURCE_PATHS'] = source_paths
         params['TARGET_PATHS'] = target_paths
